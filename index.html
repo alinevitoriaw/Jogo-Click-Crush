@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Click & Crush</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="game-container">
+    <h1>Click & Crush</h1>
+
+    <div id="controls">
+      <label for="difficulty">Dificuldade:</label>
+      <select id="difficulty">
+        <option value="">-- Selecione --</option>
+        <option value="1000">Fácil</option>
+        <option value="700">Médio</option>
+        <option value="400">Difícil</option>
+      </select>
+      <button id="start-btn">Start</button>
+    </div>
+
+    <div id="score">Pontuação: 0</div>
+    <div id="timer">Tempo: 30s</div>
+    <div id="balls-container"></div>
+  </div>
+
+  <audio id="sound-click" src="sounds/click.mp3" preload="auto"></audio>
+  <audio id="sound-hover" src="sounds/hover.mp3" preload="auto"></audio>
+  <audio id="sound-key" src="sounds/key.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
